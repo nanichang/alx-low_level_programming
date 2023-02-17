@@ -6,16 +6,11 @@
  * You can only use the putchar function
  * Return: 0
  */
-
 int main(void)
 {
-
-int n = 48;
-while (n <= 57)
-{
-putchar(n);
-n += 1;
-}
-printf("\n");
+int a;
+for (a = 0; a < 10; a++)
+printf("%d", a);
+putchar('\n');
 return (0);
 }
