@@ -6,16 +6,17 @@
  * @h: A pointer to the head of the list_t list.
  *
  * Return: The number of nodes in the list_t list.
- * Author: Nanichang Katzing
  */
 size_t print_listint(const listint_t *h)
 {
-	size_t numNodes = 0;
+	size_t nodes = 0;
 
-	for (; h != NULL; h = h->next, numNodes++)
+	while (h)
 	{
+		nodes++;
 		printf("%d\n", h->n);
+		h = h->next;
 	}
 
-	return (numNodes);
+	return (nodes);
 }
