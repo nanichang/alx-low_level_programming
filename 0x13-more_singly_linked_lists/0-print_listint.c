@@ -8,15 +8,14 @@
  * Return: The number of nodes in the list_t list.
  * Author: Nanichang Katzing
  */
-size_t print_listint(const listint_t *h) 
+size_t print_listint(const listint_t *h)
 {
-    size_t numNodes = 0;
+	size_t numNodes = 0;
 
-    for (; h != NULL; h = h->next, numNodes++) 
+	for (; h != NULL; h = h->next, numNodes++)
 	{
-        printf("%d\n", h->n);
-    }
+		printf("%d\n", h->n);
+	}
 
-    return numNodes;
+	return (numNodes);
 }
-
